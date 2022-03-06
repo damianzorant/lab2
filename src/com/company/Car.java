@@ -10,7 +10,7 @@ public class Car extends Device {
             throw new Exception("Sorry, sprzedający nie ma auta");
         }
         if(!buyer.hasFreeParkingLot()){
-            throw new Exception("kupujący nie ma gdzie trzymać auta")
+            throw new Exception("kupujący nie ma gdzie trzymać auta");
         }
 
         buyer.addCar(this);

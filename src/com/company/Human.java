@@ -36,7 +36,7 @@ public class Human {
 
     public boolean hasACar(Car carWeLookingFor){
         for (Car car : this.garage){
-            if(car == carWeLookingFor{
+            if(car == carWeLookingFor){
                 return true;
             }
         }
@@ -44,7 +44,7 @@ public class Human {
     }
 
     public boolean hasFreeParkingLot(){
-        for(int i = 0; i < this.garage.length) {
+        for(int i = 0; i < this.garage.length; i++) {
             if (this.garage[i] == null){
                 return true;
             }
