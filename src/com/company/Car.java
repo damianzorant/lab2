@@ -13,8 +13,8 @@ public class Car extends Device {
             throw new Exception("kupujący nie ma gdzie trzymać auta")
         }
 
-        buyer.removeCar(this);
-        seller.addCar(this);
+        buyer.addCar(this);
+        seller.removeCar(this);
         buyer.cash -= price;
         seller.cash += price;
 

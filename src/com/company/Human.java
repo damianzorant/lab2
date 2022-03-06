@@ -52,5 +52,25 @@ public class Human {
         return false;
     }
 
+    public void addCar(Car newCar){
+        for(int i = 0; i < garage.length; i++){
+            if(garage[i] == null){
+                garage[i] = newCar;
+                break;
+            }
+        }
+        //todo: wywal błąd jeżeli nie znaleziono miejsca
+    }
+
+    public void removeCar(Car oldCar){
+        for(int i = 0; i < garage.length; i++){
+            if(garage[i] == oldCar){
+                garage[i] = null;
+                break;
+            }
+        }
+        //todo: błąd jeżeli nie znaleziono auta
+    }
+
 
 }
